@@ -1,4 +1,5 @@
 import styles from "./ExpenseForm.module.css";
+import Button from "../../Button/Button";
 import { useState, useEffect } from "react";
 import { enqueueSnackbar, useSnackbar } from "notistack";
 
@@ -133,12 +134,12 @@ function ExpenseForm({
           required
         />
 
-        <button type="submit" shadow>
+        <button type="submit" btnstyle="primary" shadow>
           {editId ? "Edit Expense" : "Add Expense"}{" "}
         </button>
 
-        <button shadow handleClick={() => setIsOpen(false)}>
-          {" "}
+        <button btnstyle="secondary" shadow handleClick={() => setIsOpen(false)}>
+        
           Cancel
         </button>
       </form>
