@@ -2,14 +2,14 @@ import styles from './Button.module.css'
 function Button({
   children,
   handleClick,
-  btnstyle = "primary",
+  style = "primary",
   shadow = false,
   type = "button",
 }) {
   return (
     <button type={type} 
     onClick={handleClick}
-    className={`${styles.button} ${styles[btnstyle]} ${shadow && styles.shadow}`}
+    className={`${styles.button} ${styles[style]} ${shadow && styles.shadow}`}
     >
       {children}
     </button>

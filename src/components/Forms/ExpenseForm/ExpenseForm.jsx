@@ -134,14 +134,14 @@ function ExpenseForm({
           required
         />
 
-        <button type="submit" btnstyle="primary" shadow>
+        <Button type="submit" style="primary" shadow>
           {editId ? "Edit Expense" : "Add Expense"}{" "}
-        </button>
+        </Button>
 
-        <button btnstyle="secondary" shadow handleClick={() => setIsOpen(false)}>
+        <Button style="secondary" shadow handleClick={() => setIsOpen(false)}>
         
           Cancel
-        </button>
+        </Button>
       </form>
     </div>
   );
