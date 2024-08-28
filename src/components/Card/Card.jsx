@@ -24,5 +24,5 @@ function Card({
   );
 }
 
-
+//export 
 export default Card;
