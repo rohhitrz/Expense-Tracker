@@ -31,5 +31,5 @@ function Barchart({ data }) {
     </div>
   );
 }
-//export 
+
 export default Barchart;
