@@ -15,7 +15,7 @@ function Barchart({ data }) {
       <h2>Top Expenses</h2>
 
       <div className={styles.barWrapper}>
-        <ResponsiveContainer width="100%" height="280">
+        <ResponsiveContainer width="100%" height={280}>
           <Barchart data={data} layout="vertical">
             <XAxis type="number" axisLine={false} display="none" />
             <YAxis
