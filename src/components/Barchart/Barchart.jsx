@@ -1,22 +1,25 @@
 import React, { PureComponent } from "react";
 import {
-  Barchart,
+  BarChart,
   Bar,
   Cell,
   XAxis,
   YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
   ResponsiveContainer,
 } from "recharts";
-import styles from "./Barchart.module.css";
+import styles from "./BarChart.module.css";
 
-function Barchart({ data }) {
+export default function BarChartComponent({ data }) {
   return (
     <div className={styles.expenseChart}>
       <h2>Top Expenses</h2>
 
       <div className={styles.barWrapper}>
         <ResponsiveContainer width="100%" height={280}>
-          <Barchart data={data} layout="vertical">
+          <BarChart data={data} layout="vertical">
             <XAxis type="number" axisLine={false} display="none" />
             <YAxis
               type="category"
@@ -25,11 +28,9 @@ function Barchart({ data }) {
               axisLine={false}
             />
             <Bar dataKey="value" fill="#8884d8" barSize={25} />
-          </Barchart>
+          </BarChart>
         </ResponsiveContainer>
       </div>
     </div>
   );
 }
-
-export default Barchart;

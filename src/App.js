@@ -1,12 +1,13 @@
-import ExpenseForm from "./components/Forms/ExpenseForm/ExpenseForm";
-import AddBalanceForm from "./components/Forms/AddBalanceForm/AddBalanceForm";
+import Home from './pages/Home/Home'
+import { SnackbarProvider } from 'notistack';
 
 function App() {
   return (
-    <div className="App">
-    <ExpenseForm/>
-    <AddBalanceForm/>
-    </div>
+    <SnackbarProvider >
+      <div>
+        <Home />
+      </div>
+    </SnackbarProvider>
   );
 }
 

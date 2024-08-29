@@ -1,10 +1,10 @@
 .button{
     background: #E3E3E3;
-    border: 0;
+    border:0;
     font-weight: 700;
     font-size: 1rem;
     border-radius: 15px;
-    padding: 12px 30px;
+    padding:12px 30px;
     color:#000;
     cursor: pointer;
 }
@@ -20,10 +20,12 @@
     font-weight: 400;
     width: fit-content;
 }
+
 .success{
     background: linear-gradient(90deg, #B5DC52, #89E148);
     color:#fff;
 }
+
 .failure{
     background: linear-gradient(90deg, #FF9595, #FF4747, #FF3838);
     color:#fff;
